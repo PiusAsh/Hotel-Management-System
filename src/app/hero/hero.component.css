@@ -1,0 +1,22 @@
+.hero {
+  background-image: url(/assets/slide01-min.jpg);
+  height: 95vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.heroText {
+  color: white;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.heroBtn {
+  color: black;
+  background-color: #FEA116;
+  padding: 13px;
+  border: none;
+  margin-top: 20px;
+}

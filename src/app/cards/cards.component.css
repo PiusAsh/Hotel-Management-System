@@ -1,0 +1,29 @@
+.RoomImg{
+    background-image: url(/assets/free-room-01-min.jpg);
+    height: 150px;
+    background-size: contain;
+}
+.RoomImg2{
+    background-image: url(/assets/slide02-min.jpg);
+    height: 150px;
+    background-size: contain;
+}
+.RoomImg3{
+    background-image: url(/assets/free-room-02-min.jpg);
+    height: 150px;
+    background-size: contain;
+}
+
+.card-header{
+    background-color: #FEA116;
+    color: white;
+}
+
+.book{
+    background-color: #FEA116;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    font-size: 18px;
+}
