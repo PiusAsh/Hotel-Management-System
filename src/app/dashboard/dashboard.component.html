@@ -1,1 +1,240 @@
-<p>dashboard works!</p>
+
+<nav class="navbar navbar-expand-lg shadow-sm p-3 navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-5" href="#"><img src="/assets/logo (1).png" alt="Logo" style="height: 30px;"
+        width="140px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Rooms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Single Room</a></li>
+            <li><a class="dropdown-item" href="#">2 Rooms</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">More Rooms</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+
+
+        <!-- <a class="nav-link link1" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"></a> -->
+
+
+        <a class="nav-link link2" data-bs-toggle="modal" data-bs-target="#exampleModal" routerLink="/">Logout</a>
+
+        <!-- Offcanvas  -->
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="wrapper">
+
+  <!-- <nav id="sidebar">
+    <div class="sidebar-header d-flex justify-content-center">
+      <img class="py-4" src="/assets/logo (1).png" alt="logo" style="width: 120px;">
+    </div>
+
+    <ul class="list-unstyled components mt-5 text-center">
+      <li class="active">
+        <a class="links" href="#">Dashboard</a>
+      </li>
+      <li>
+        <a class="links" href="#">Tables</a>
+      </li>
+      <li>
+        <a class="links" href="#">Charts</a>
+      </li>
+      <li>
+        <a class="links" href="#">Support</a>
+      </li>
+      <li>
+        <a class="links" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled CTAs mt-5">
+      <li>
+        <a href="#" class="log">Log Out</a>
+      </li>
+      <li>
+        <a routerLink="/" class="backhome">Back to home</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <div class="container py-5">
+      <div class="row">
+        <h3 class="py-3 px-3 welcome">Welcome Admin,</h3>
+        <div class="col-lg-4">
+          <div class="card shadow-sm ">
+            <div class="card-body">
+              <div class="d-flex">
+               <h5 class="bookText"> <i class="bi bi-person-rolodex px-3"></i>
+                75</h5>
+              </div>
+              <p class="card-text text-right">
+               Total Bookings
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow-sm ">
+            <div class="card-body">
+              <div class="d-flex">
+                <h5 class="bookText"> <i class="bi bi-person-badge"></i>
+                  156</h5>
+              </div>
+              <p class="card-text text-right">
+                Total Guest
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow-sm ">
+            <div class="card-body">
+              <div class="d-flex">
+                <h5 class="bookText"><i class="bi bi-alarm"></i>
+                  7</h5>
+              </div>
+              <p class="card-text text-right">
+                Due Checkouts
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table" *ngIf="guests && guests.length > 0">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Full Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Room</th>
+          <th scope="col">Check In</th>
+          <th scope="col">Check Out</th>
+          <th scope="col">Price</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let guest of guests">
+           <td>{{guest.id}}</td>
+           <td>{{guest.fullName}}</td>
+           <td>{{guest.email}}</td>
+           <td>{{guest.room}}</td>
+          <td>{{guest.checkIn}}</td>
+           <td>{{guest.checkOut}}</td>
+           <td>{{guest.price}}</td>
+  
+ <td>
+            <!-- <i class="bi bi-pencil-square shadow-sm"></i>&nbsp;&nbsp;&nbsp;
+<i class="bi bi-x-square-fill shadow-sm"></i> -->
+<!-- <button class="btn1" a [routerLink]="['guest', 'edit', 'guest.id']">View</button> -->
+<!-- <button class="btn1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+View Info
+</button> -->
+
+
+
+<!-- <button class="btn1">
+<a routerLink="edit">View Info</a>
+</button> -->
+
+<button class="btn1">
+<a [routerLink]="['/guest', 'edit', 'guest.id']">View Info</a>
+</button>
+<!-- Register Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Guest Record</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="booking-form">
+                            <form>
+                              <div class="form-group mb-3"> <input class="form-control" type="text" placeholder="Id"
+                                  required name="id" [(ngModel)]="guestDetails.id" readonly>
+                              </div>
+                              <div class="form-group mb-3"> <input class="form-control" type="text"
+                                  placeholder="Full Name" required name="fullName" [(ngModel)]="guestDetails.fullName">
+                              </div>
+
+                              <div class="form-group mb-3"> <input class="form-control" type="email" placeholder="Email"
+                                  required name="email" [(ngModel)]="guestDetails.email">
+                              </div>
+
+                              <div class="form-group mb-3"> <input class="form-control" type="text" placeholder="Room"
+                                  required name="room" [(ngModel)]="guestDetails.room">
+                              </div>
+
+                              <div class="form-group mb-3"> <input class="form-control" type="date" required
+                                  name="checkIn" [(ngModel)]="guestDetails.checkIn"> </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group mb-4"> <input class="form-control" type="date" required
+                                      name="checkOut" [(ngModel)]="guestDetails.checkOut"> </div>
+                                </div>
+                              </div>
+
+                              <div class="form-btn"> <button class="submit-btn1">Save</button>&nbsp;&nbsp;&nbsp; <button
+                                  class="submit-btn2">Delete</button>
+                              </div>
+                            </form>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+          </td>
+        </tr>
+       
+      </tbody>
+    </table>
+    <p *ngIf="!guests ||guests.length <= 0">No Guests Found</p>
+  </div>
+</div>

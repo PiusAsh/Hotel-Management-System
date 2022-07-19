@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(/assets/slide01-min.jpg);
+  background-image: url(/assets/1922.jpg);
   height: 95vh;
   background-position: center;
   background-size: cover;
@@ -9,8 +9,10 @@
 
 .heroText {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 50px;
+  font-family: 'Mulish',
+  sans-serif;
 }
 
 .heroBtn {
@@ -20,3 +22,9 @@
   border: none;
   margin-top: 20px;
 }
+.lead{
+  font-family: 'Mulish',
+  sans-serif;
+}
+
+

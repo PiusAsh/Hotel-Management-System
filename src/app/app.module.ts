@@ -9,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { CardsComponent } from './cards/cards.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { EditGuestComponent } from './edit-guest/edit-guest.component';
+import { GuestProfileComponent } from './guest-profile/guest-profile.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FooterComponent,
     HeroComponent,
     CardsComponent,
-    DashboardComponent
+    DashboardComponent,
+    EditGuestComponent,
+    GuestProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

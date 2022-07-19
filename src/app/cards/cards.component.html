@@ -1,40 +1,43 @@
 <div class="container-fluid py-5">
   <div class="container py-5">
-    <h2 class="text-center mb-3">Available Rooms</h2>
+    <h2 class="text-center mb-3">Our Best Rooms</h2>
     <div class="row">
       <div class="col-lg-4">
         <div class="card text-center mb-2 ">
-          <div class="RoomImg">
+          <div class="RoomImg4">
           </div>
-          <div class="card-header">Arsenal (1 Room)</div>
+          <div class="card-header">Deluxe Room</div>
           <div class="card-body">
-            <h5 class="card-title py-2">N50,000</h5>
+            <h5 class="card-title py-2">₦50,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card text-center ">
-          <div class="RoomImg2">
+          <div class="RoomImg5">
           </div>
-          <div class="card-header">Manchester (2 Rooms)</div>
+          <div class="card-header">Studio Broadway</div>
           <div class="card-body">
-            <h5 class="card-title py-2">N70,000</h5>
+            <h5 class="card-title py-2">₦70,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions1"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card text-center mb-2 ">
-          <div class="RoomImg3">
+          <div class="RoomImg6">
           </div>
-          <div class="card-header">Exclusive (4 Rooms)</div>
+          <div class="card-header">Standard Double</div>
           <div class="card-body">
-            <h5 class="card-title py-2">N140,000</h5>
+            <h5 class="card-title py-2">₦140,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
@@ -45,11 +48,12 @@
         <div class="card text-center mb-2 ">
           <div class="RoomImg">
           </div>
-          <div class="card-header">Arsenal (1 Room)</div>
+          <div class="card-header">Arsenal </div>
           <div class="card-body">
-            <h5 class="card-title py-2">N50,000</h5>
+            <h5 class="card-title py-2">₦56,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions3"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
@@ -57,11 +61,12 @@
         <div class="card text-center mb-2 ">
           <div class="RoomImg2">
           </div>
-          <div class="card-header">Manchester (2 Rooms)</div>
+          <div class="card-header">Manchester</div>
           <div class="card-body">
-            <h5 class="card-title py-2">N70,000</h5>
+            <h5 class="card-title py-2">₦75,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions4"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
@@ -69,11 +74,12 @@
         <div class="card text-center mb-2">
           <div class="RoomImg3">
           </div>
-          <div class="card-header">Exclusive (4 Rooms)</div>
+          <div class="card-header">Exclusive</div>
           <div class="card-body">
-            <h5 class="card-title py-2">N140,000</h5>
+            <h5 class="card-title py-2">₦140,000</h5>
 
-            <button type="button" class="book">Book</button>
+            <button type="button" class="book" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions5"
+              aria-controls="offcanvasWithBothOptions">Book</button>
           </div>
         </div>
       </div>
@@ -81,3 +87,369 @@
     </div>
   </div>
 </div>
+
+<section class="bookSection py-5">
+  <div class="contianer-fluid py-5">
+    <h5 class="bookText text-center py-5">Book early and save up to 15% with Lorem ipsum dolor sit amet,<br />
+      consectetur adipisicing elit, sed do eiusmod tempor
+      aliqua.</h5>
+    <button type="button" class="btn2">Get Started</button>
+  </div>
+</section>
+
+
+<!-- DELUXE ROOM OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Guest Details</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <form  #form="ngForm" (ngSubmit)="addGuest()">
+                <div class="form-group"> <input class="form-control" type="text" placeholder="Enter your Full Name"
+                    required name="fullName" [(ngModel)]="deluxe.fullName">
+                  <span class="form-label">Full Name</span> </div>
+
+                <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email"
+                    required name="email" [(ngModel)]="deluxe.email"> <span
+                    class="form-label">Email</span> </div>
+
+                <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+                    [(ngModel)]="deluxe.checkIn"> <span
+                    class="form-label">Check In</span> </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group"> <input class="form-control" type="date" required name="checkOut"
+                        [(ngModel)]="deluxe.checkOut"> <span
+                        class="form-label">Check out</span> </div>
+                  </div>
+                </div>
+
+                
+
+                <div class="form-group"> <input class="form-control" type="text" value="Deluxe Room" readonly
+                    name="room" [(ngModel)]="deluxe.room">
+                   </div>
+
+                <div class="form-group"> <input class="form-control controlValue" type="text" readonly
+                    name="price" [(ngModel)]="deluxe.price"> </div>
+
+                <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+</div>
+
+<!-- END OF DELUXE ROOM OFFCANCAS -->
+
+
+<!-- STUDIO BROADWAY ROOM OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Studio Broadway Room</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+<div class="studioOffcanvas">
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+                            <form #form="ngForm" (ngSubmit)="studioGuest()">
+                              <div class="form-group"> <input class="form-control" type="text"
+                                  placeholder="Enter your Full Name" required name="fullName"
+                                  [(ngModel)]="studio.fullName">
+                                <span class="form-label">Full Name</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="email"
+                                  placeholder="Enter your Email" required name="email"
+                                  [(ngModel)]="studio.email"> <span class="form-label">Email</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+                                  [(ngModel)]="studio.checkIn"> <span class="form-label">Check In</span> </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group"> <input class="form-control" type="date" required
+                                      name="checkOut" [(ngModel)]="studio.checkOut"> <span
+                                      class="form-label">Check out</span> </div>
+                                </div>
+                              </div>
+
+
+
+                              <div class="form-group"> <input class="form-control" type="text" value="Deluxe Room"
+                                  readonly name="room" [(ngModel)]="studio.room">
+                              </div>
+
+                              <div class="form-group"> <input class="form-control controlValue" type="text" readonly
+                                  name="price" [(ngModel)]="studio.price"> </div>
+
+                              <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+                            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+  </div>
+</div>
+
+<!-- END OF STUDIO WAY ROOM OFFCANCAS -->
+
+
+<!-- Standard double  OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Standard Double Room</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+<div class="standardDouble">
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+                            <form #form="ngForm" (ngSubmit)="standardGuest()">
+                              <div class="form-group"> <input class="form-control" type="text"
+                                  placeholder="Enter your Full Name" required name="fullName"
+                                  [(ngModel)]="standard.fullName">
+                                <span class="form-label">Full Name</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="email"
+                                  placeholder="Enter your Email" required name="email" [(ngModel)]="standard.email">
+                                  <span
+                                  class="form-label">Email</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+                                  [(ngModel)]="standard.checkIn"> <span class="form-label">Check In</span> </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group"> <input class="form-control" type="date" required
+                                      name="checkOut" [(ngModel)]="standard.checkOut"> <span class="form-label">Check
+                                      out</span> </div>
+                                </div>
+                              </div>
+
+
+
+                              <div class="form-group"> <input class="form-control" type="text" value="Standard Double"
+                                  readonly name="room" [(ngModel)]="standard.room">
+                              </div>
+
+                              <div class="form-group"> <input class="form-control controlValue" type="text" readonly
+                                  name="price" [(ngModel)]="standard.price"> </div>
+
+                              <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+                            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+  </div>
+</div>
+
+<!-- END OF STANDARD DOUBLE ROOM OFFCANCAS -->
+
+
+
+<!-- ARSENAL  OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions3"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">Arsenal Room</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+<div class="standardDouble">
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+                            <form #form="ngForm" (ngSubmit)="arsenalGuest()">
+                              <div class="form-group"> <input class="form-control" type="text"
+                                  placeholder="Enter your Full Name" required name="fullName"
+                                  [(ngModel)]="arsenal.fullName">
+                                <span class="form-label">Full Name</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="email"
+                                  placeholder="Enter your Email" required name="email" [(ngModel)]="arsenal.email">
+                                <span class="form-label">Email</span> </div>
+
+                              <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+                                  [(ngModel)]="arsenal.checkIn"> <span class="form-label">Check In</span> </div>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group"> <input class="form-control" type="date" required
+                                      name="checkOut" [(ngModel)]="arsenal.checkOut"> <span class="form-label">Check
+                                      out</span> </div>
+                                </div>
+                              </div>
+
+
+
+                              <div class="form-group"> <input class="form-control" type="text" value="Standard Double"
+                                  readonly name="room" [(ngModel)]="arsenal.room">
+                              </div>
+
+                              <div class="form-group"> <input class="form-control controlValue" type="text" readonly
+                                  name="price" [(ngModel)]="arsenal.price"> </div>
+
+                              <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+                            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+  </div>
+</div>
+
+<!-- END OF Arsenal OFFCANCAS -->
+
+
+<!-- MANCHESTER  OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions4"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Manchester Room </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+<div class="manchester">
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+<form #form="ngForm" (ngSubmit)="manchesterGuest()">
+  <div class="form-group"> <input class="form-control" type="text" placeholder="Enter your Full Name" required
+      name="fullName" [(ngModel)]="manchester.fullName">
+    <span class="form-label">Full Name</span> </div>
+
+  <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email" required name="email"
+      [(ngModel)]="manchester.email">
+    <span class="form-label">Email</span> </div>
+
+  <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+      [(ngModel)]="manchester.checkIn"> <span class="form-label">Check In</span> </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group"> <input class="form-control" type="date" required name="checkOut"
+          [(ngModel)]="manchester.checkOut"> <span class="form-label">Check
+          out</span> </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-group"> <input class="form-control" type="text" value="Standard Double" readonly name="room"
+      [(ngModel)]="manchester.room">
+  </div>
+
+  <div class="form-group"> <input class="form-control controlValue" type="text" readonly name="price"
+      [(ngModel)]="manchester.price"> </div>
+
+  <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+  </div>
+</div>
+
+<!-- END OF manchester OFFCANCAS -->
+<!-- exclusive  OFFCANCAS -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions5"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Exclusive Room </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- offcanvas -->
+<div class="exlusive">
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+<form #form="ngForm" (ngSubmit)="exclusiveGuest()">
+  <div class="form-group"> <input class="form-control" type="text" placeholder="Enter your Full Name" required
+      name="fullName" [(ngModel)]="exclusive.fullName">
+    <span class="form-label">Full Name</span> </div>
+
+  <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email" required name="email"
+      [(ngModel)]="exclusive.email">
+    <span class="form-label">Email</span> </div>
+
+  <div class="form-group"> <input class="form-control" type="date" required name="checkIn"
+      [(ngModel)]="exclusive.checkIn"> <span class="form-label">Check In</span> </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group"> <input class="form-control" type="date" required name="checkOut"
+          [(ngModel)]="exclusive.checkOut"> <span class="form-label">Check
+          out</span> </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-group"> <input class="form-control" type="text" value="Standard Double" readonly name="room"
+      [(ngModel)]="exclusive.room">
+  </div>
+
+  <div class="form-group"> <input class="form-control controlValue" type="text" readonly name="price"
+      [(ngModel)]="exclusive.price"> </div>
+
+  <div class="form-btn"> <button class="submit-btn">Book Now</button> </div>
+</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of offcanvas -->
+  </div>
+  </div>
+</div>
+
+<!-- END OF exclusive OFFCANCAS -->
