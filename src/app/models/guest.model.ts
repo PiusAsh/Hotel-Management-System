@@ -1,13 +1,11 @@
-// export interface IProduct{
-//     productId: number;
-//     productName: string;
-//     productCode: string;
-//     releaseDate: string;
-//     description: string;
-//     price: number;
-//     starRating: number;
-//     imageUrl: string;
-// }
+export interface User{
+    fullName: string;
+    email: string;
+    phone: string;
+    address: string;
+    country: string;
+    password: string;
+}
 
 export interface Guest{
     id: any;

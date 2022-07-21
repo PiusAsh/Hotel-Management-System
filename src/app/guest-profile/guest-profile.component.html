@@ -94,23 +94,23 @@
   <div id="content">
 
 <div class="container py-5">
-    <div class="row py-5">
+    <div class="row py-5" *ngFor=" let user of users">
 <h3 class="welcome px-5">
-    Welcome, User
+    Welcome, {{user.fullName}}
 </h3>
 
-<div class="details py-5 px-5">
-    <h5 class="name">Full Name: <span class="px-3">Pius Ash</span></h5>
+<div class="details py-5 px-5" >
+    <h5 class="name">Full Name: <span class="px-3"> {{user.fullName}} </span></h5>
     <hr>
-    <h5 class="name">Email Address: <span class="px-3">Pius Ash</span></h5>
+    <h5 class="name">Email Address: <span class="px-3">{{user.email}}</span></h5>
     <hr>
-    <h5 class="name">Phone: <span class="px-3">Pius Ash</span></h5>
+    <h5 class="name">Phone: <span class="px-3"> {{user.phone}}</span></h5>
     <hr>
-    <h5 class="name">Address: <span class="px-3">Pius Ash</span></h5>
+    <h5 class="name">Address: <span class="px-3">{{user.address}}</span></h5>
     <hr>
-    <h5 class="name">Country: <span class="px-3">Pius Ash</span></h5>
+    <h5 class="name">Country: <span class="px-3">{{user.country}}</span></h5>
     <hr>
-    <h5 class="name">Password: <span class="px-3">Pius Ash</span></h5>
+    <h5 class="name">Password: <span class="px-3">{{user.password}}</span></h5>
 </div>
     </div>
 </div>

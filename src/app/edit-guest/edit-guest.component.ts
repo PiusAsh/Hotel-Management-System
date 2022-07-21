@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Guest } from '../models/guest.model';
 import { GuestsService } from '../services/guests.service';
 
@@ -21,7 +21,7 @@ export class EditGuestComponent implements OnInit {
   price: 0,
   };
 
-  constructor(private route: ActivatedRoute, private guestService: GuestsService) { 
+  constructor(private route: ActivatedRoute, private guestService: GuestsService, private router: Router) { 
 
   }
 
@@ -34,7 +34,8 @@ this.route.paramMap.subscribe({
 //call api
 this.guestService.getGuest(id)
 .subscribe({
-  next: (response) => {
+  next: (response) => {console.log('******CHECKING', response);
+
 this.guestDetails = response;
   }
 });
@@ -43,4 +44,21 @@ this.guestDetails = response;
 })
   }
 
+  updateGuest() {
+    this.guestService.updateGuest(this.guestDetails.id, this.guestDetails)
+    .subscribe({
+      next: (response) => {
+        this.router.navigate(['dashboard'])
+      }
+    });
+  }
+
+  deleteGuest(id: string){
+    this.guestService.deleteGuest(id)
+    .subscribe({
+      next: (response) => {
+        this.router.navigate(['dashboard'])
+      }
+    });
+  }
 }

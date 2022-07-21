@@ -83,7 +83,7 @@ room: 'Exclusive',
 this.guestService.addGuest(this.deluxe)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 }
@@ -92,7 +92,7 @@ studioGuest(){
 this.guestService.addGuest(this.studio)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 
@@ -102,7 +102,7 @@ standardGuest(){
 this.guestService.addGuest(this.standard)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 }
@@ -111,7 +111,7 @@ manchesterGuest(){
 this.guestService.addGuest(this.manchester)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 }
@@ -120,7 +120,7 @@ arsenalGuest(){
 this.guestService.addGuest(this.arsenal)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 }
@@ -129,7 +129,7 @@ exclusiveGuest(){
 this.guestService.addGuest(this.exclusive)
  .subscribe({
   next: (guest) => {
-this.router.navigate(['profile'])
+this.router.navigate(['dashboard'])
   }
  });
 }
