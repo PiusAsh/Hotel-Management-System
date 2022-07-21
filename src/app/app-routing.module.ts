@@ -4,6 +4,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EditGuestComponent } from './edit-guest/edit-guest.component';
 import { GuestProfileComponent } from './guest-profile/guest-profile.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
 {
@@ -25,6 +27,14 @@ const routes: Routes = [
 {
   path: 'profile',
   component: GuestProfileComponent
+},
+{
+  path: 'register',
+  component: RegisterComponent
+},
+{
+  path: 'login',
+  component: LoginComponent
 }
 ];
 

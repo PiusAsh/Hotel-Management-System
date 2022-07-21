@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { EditGuestComponent } from './edit-guest/edit-guest.component';
 import { GuestProfileComponent } from './guest-profile/guest-profile.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { GuestProfileComponent } from './guest-profile/guest-profile.component';
     CardsComponent,
     DashboardComponent,
     EditGuestComponent,
-    GuestProfileComponent
+    GuestProfileComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

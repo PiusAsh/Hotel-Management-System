@@ -4,7 +4,6 @@ export interface User{
     phone: string;
     address: string;
     country: string;
-    password: string;
 }
 
 export interface Guest{

@@ -36,4 +36,8 @@ export class DashboardComponent implements OnInit {
    console.log(response)
 })
 }
+
+logout(){
+  alert('You are about to Logout, Click OK to Proceed')
+}
 }

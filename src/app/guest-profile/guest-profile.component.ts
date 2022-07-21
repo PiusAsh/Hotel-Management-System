@@ -12,15 +12,14 @@ export class GuestProfileComponent implements OnInit {
 
 
 users: User[] = [
-  //   {
+    {
 
-  // fullName: 'Joshua Doe',
-  // email: 'Joed@gmail.com',
-  // phone: '09052457787',
-  // address: 'street',
-  // password: "Tomorrow",
-  // country: 'Nigeria',
-  //   }
+  fullName: 'Joshua Doe',
+  email: 'Joed@gmail.com',
+  phone: '09052457787',
+  address: 'street',
+  country: 'Nigeria',
+    }
   ];
 
 

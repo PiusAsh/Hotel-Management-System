@@ -1,0 +1,19 @@
+.ModalBtn {
+  background-color: #FEA116;
+  color: #000;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  font-family: 'Mulish',
+    sans-serif;
+}
+
+input:focus {
+  -webkit-box-shadow: 0px 0px 0px 2px #FEA116;
+  box-shadow: 0px 0px 0px 2px #FEA116;
+}
+
+.bgContainer{
+    background-image: url(/assets/Fotolia_163203222_Subscription_Monthly_M-370x250.jpg);
+    background-size: contain;
+}

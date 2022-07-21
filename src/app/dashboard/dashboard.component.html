@@ -41,7 +41,7 @@
         <!-- <a class="nav-link link1" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#"></a> -->
 
 
-        <a class="nav-link link2" data-bs-toggle="modal" data-bs-target="#exampleModal" routerLink="/">Logout</a>
+        <a class="nav-link link2" data-bs-toggle="modal" data-bs-target="#exampleModal" routerLink="/" (click)="logout()">Logout</a>
 
         <!-- Offcanvas  -->
         <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -95,7 +95,8 @@
 
     <div class="container py-5">
       <div class="row">
-        <h3 class="py-3 px-3 welcome">Welcome Admin,</h3>
+        <h3 class="py-3 px-3 welcome text-center">Welcome Admin,</h3>
+        <div class="col-lg-2"></div>
         <div class="col-lg-4">
           <div class="card shadow-sm ">
             <div class="card-body">
@@ -116,7 +117,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <h5 class="bookText"> <i class="bi bi-person-badge"></i>
-                  156</h5>
+                  0</h5>
               </div>
               <p class="card-text text-right">
                 Total Guest
@@ -126,8 +127,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card shadow-sm ">
+        <div class="col-lg-2">
+          <!-- <div class="card shadow-sm ">
             <div class="card-body">
               <div class="d-flex">
                 <h5 class="bookText"><i class="bi bi-alarm"></i>
@@ -139,7 +140,7 @@
 
 
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -1,0 +1,94 @@
+<div class="container-fluid bgContainer py-5">
+  <div class="row py-5">
+    <div class="col-lg-4">
+
+    </div>
+    <div class="col-lg-4">
+      <!-- <form #form="ngForm" (ngSubmit)="addRegisterUser()">
+        <div class="mb-1">
+          <label for="exampleInputFull" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="exampleInputFull" [(ngModel)]="user.fullName">
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                [(ngModel)]="user.email">
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <div class="mb-1">
+              <label for="exampleInputNum" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="exampleInputNum" aria-describedby="emailHelp"
+                [(ngModel)]="user.phone">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mb-1">
+          <label for="exampleInputcountry" class="form-label">Residential Address</label>
+          <input type="text" class="form-control" id="exampleInputcountry" [(ngModel)]="user.address">
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputcountry" class="form-label">Country</label>
+          <input type="country" class="form-control" id="exampleInputcountry" [(ngModel)]="user.country">
+        </div>
+        <div class="mb-1">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="user.password">
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="submit" class="ModalBtn">Register Now</button>
+        </div>
+      </form> -->
+      <form #form="ngForm" class="py-5">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleInputFull" placeholder="Full Name" required>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+
+            <div class="mb-3">
+              
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <div class="mb-3">
+
+              <input type="number" class="form-control " id="exampleInputNum" aria-describedby="emailHelp" placeholder="Phone Number" required>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mb-3">
+
+          <input type="text" class="form-control mb-2" id="exampleInputcountry" placeholder="Residential Address" required>
+        </div>
+        <div class="mb-3">
+
+          <input type="country" class="form-control mb-2" id="exampleInputcountry" placeholder="Country" required>
+        </div>
+        <div class="mb-1">
+
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button type="submit" class="ModalBtn">Register Now</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-lg-4">
+
+    </div>
+  </div>
+</div>
