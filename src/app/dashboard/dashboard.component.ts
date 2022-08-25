@@ -8,19 +8,9 @@ import { GuestsService } from '../services/guests.service';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  guests: Guest[] = [
-    //   {
-    //     "id": 232,
-    // "fullName": "Joshua Doe",
-    // "email": "Joed@gmail.com",
-    // "room": "Studio Broadway room",
-    // "checkIn": "Today",
-    // "checkOut": "Tomorrow",
-    // "price": 75000
-    //   }
-  ];
+  guests: Guest[] = [];
 
-  // dueCheckouts : number = 0;
+  
 
   constructor(private guestsService: GuestsService) {}
 
@@ -38,6 +28,6 @@ export class DashboardComponent implements OnInit {
 }
 
 logout(){
-  alert('You are about to Logout, Click OK to Proceed')
+  alert('You are about to Logout. Click OK to Proceed')
 }
 }

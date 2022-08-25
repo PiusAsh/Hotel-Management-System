@@ -3,23 +3,32 @@
         <div class="col-lg-3">
 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7">
               <form #form="ngForm" (ngSubmit)="updateGuest()">
-                <div class="form-group mb-3"> <input class="form-control" id="id" type="text" placeholder="Id" required name="id" [(ngModel)]="guestDetails.id" readonly>
-                </div>
-                <div class="form-group mb-3"> <input class="form-control" id="fuulName" type="text" placeholder="Full Name" required
+                          <!-- <label for="exampleInputFull" class="form-label">Id</label>
+                <div class="form-group mb-1"> <input class="form-control" id="id" type="text" placeholder="Id" required name="id" [(ngModel)]="guestDetails.id" readonly>
+                </div> -->
+<div class="d-flex"> <h5 class="px-3">Full Name:</h5>
+                <div class="form-group mb-1"> <input class="form-control" id="fuulName" type="text" placeholder="Full Name" required
                     name="fullName" [(ngModel)]="guestDetails.fullName">
                 </div>
-                <div class="form-group mb-3"> <input class="form-control" id="email" type="email" placeholder="Email" required
+                </div>
+
+                                          <label for="exampleInputFull" class="form-label">Email Address</label>
+                <div class="form-group mb-1"> <input class="form-control" id="email" type="email" placeholder="Email" required
                     name="email" [(ngModel)]="guestDetails.email">
                 </div>
-                <div class="form-group mb-3"> <input class="form-control" id="room" type="text" placeholder="Room" required
+
+                                          <label for="exampleInputFull" class="form-label">Room </label>
+                <div class="form-group mb-1"> <input class="form-control" id="room" type="text" placeholder="Room" required
                     name="room" [(ngModel)]="guestDetails.room">
                 </div>
-                <div class="form-group mb-3"> <input class="form-control" id="checkIn" type="date" required name="checkIn"
+                                          <label for="exampleInputFull" class="form-label">Check In</label>
+                <div class="form-group mb-1"> <input class="form-control" id="checkIn" type="date" required disabled name="checkIn"
                     [(ngModel)]="guestDetails.checkIn"> </div>
                 <div class="row">
                   <div class="col-md-12">
+                                              <label for="exampleInputFull" class="form-label">Check Out</label>
                     <div class="form-group mb-4"> <input class="form-control" id="checkOut" type="date" required name="checkOut"
                         [(ngModel)]="guestDetails.checkOut"> </div>
                   </div>

@@ -117,7 +117,7 @@
             <div class="card-body">
               <div class="d-flex">
                 <h5 class="bookText"> <i class="bi bi-person-badge"></i>
-                  0</h5>
+                                    {{guests.length}}</h5>
               </div>
               <p class="card-text text-right">
                 Total Guest
@@ -148,7 +148,7 @@
     <table class="table" *ngIf="guests && guests.length > 0">
       <thead>
         <tr>
-          <th scope="col">Id</th>
+          <!-- <th scope="col">Id</th> -->
           <th scope="col">Full Name</th>
           <th scope="col">Email</th>
           <th scope="col">Room</th>
@@ -160,7 +160,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let guest of guests">
-          <td>{{guest.id}}</td>
+          <!-- <td>{{guest.id}}</td> -->
           <td>{{guest.fullName}}</td>
           <td>{{guest.email}}</td>
           <td>{{guest.room}}</td>
